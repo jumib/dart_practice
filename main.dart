@@ -1,14 +1,12 @@
 void main() {
-  // 변수 선언 먼저하고, 추후에 할당
-  late final String name;
-
-  // ~~~ Do something (Call api, Fetching data) ~~~
-
-  // X
-  // print(name);
-
-  name = 'jumi';
+  // staticData = const
+  // compile 단계에서 알고 있는 값이어야 한다.
+  const name = 'jumi';
 
   // X
-  // name = 'joomi';
+  // const name = fetchApi();
+  // 이런 경우에는
+  // final name = fetchApi();
+  // 또는
+  // var name = fetchApi();
 }
