@@ -1,6 +1,8 @@
 void main() {
-  // 함수나 메서드 내 지역변수
-  var name = 'jumi';
-  // class 내 변수나 property
-  String name2 = 'jumi';
+  // 데이터 타입을 알 수 없는 경우만 최소 사용
+  dynamic name;
+  if(name is String){
+    // string method ...
+    // name.
+  }
 }
