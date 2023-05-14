@@ -1,10 +1,14 @@
 void main() {
-  // const = final
-  final name = 'jumi';
+  // 변수 선언 먼저하고, 추후에 할당
+  late final String name;
 
-  // 타입 명시도 가능
-  //final String name = 'jumi';
+  // ~~~ Do something (Call api, Fetching data) ~~~
 
-  // 재할당 X
+  // X
+  // print(name);
+
+  name = 'jumi';
+
+  // X
   // name = 'joomi';
 }
