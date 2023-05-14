@@ -1,7 +1,13 @@
 void main() {
-  // 변수를 text로 치환한다.
-  var name = 'jumi';
-  var age = 10;
-  var greeting = 'Hello everyone, my name is $name and I\'m ${age + 2}';
-  print(greeting);
+  var oldFriends = ['minji', 'haerin'];
+  var newFriends = [
+    'daniel', 
+    'hanni', 
+    'hyein',
+    for (var friend in oldFriends) "S2 $friend",  
+  ];
+  // for (var friend in oldFriends) {
+  //  newFriends.add()
+  // }
+  print(newFriends);
 }
