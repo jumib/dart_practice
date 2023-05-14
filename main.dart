@@ -1,16 +1,7 @@
 void main() {
-  // collection if
-  var giveMeFive = true;
-  var numbers = [
-    1,
-    2,
-    3,
-    4,
-    if (giveMeFive) 5,
-  ];
-  // not using collection if
-  // if (giveMeFive) {
-  //  numbers.add(5);
-  // }
-  print(numbers);
+  // 변수를 text로 치환한다.
+  var name = 'jumi';
+  var age = 10;
+  var greeting = 'Hello everyone, my name is $name and I\'m ${age + 2}';
+  print(greeting);
 }
