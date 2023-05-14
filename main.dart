@@ -1,12 +1,16 @@
 void main() {
-  // staticData = const
-  // compile 단계에서 알고 있는 값이어야 한다.
-  const name = 'jumi';
-
-  // X
-  // const name = fetchApi();
-  // 이런 경우에는
-  // final name = fetchApi();
-  // 또는
-  // var name = fetchApi();
+  // collection if
+  var giveMeFive = true;
+  var numbers = [
+    1,
+    2,
+    3,
+    4,
+    if (giveMeFive) 5,
+  ];
+  // not using collection if
+  // if (giveMeFive) {
+  //  numbers.add(5);
+  // }
+  print(numbers);
 }
