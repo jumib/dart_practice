@@ -1,8 +1,11 @@
 void main() {
-  // 데이터 타입을 알 수 없는 경우만 최소 사용
-  dynamic name;
-  if(name is String){
-    // string method ...
-    // name.
+  // null일 수 있음을 명시하고
+  // null을 참조할 수 없도록 함
+  String? name = 'jumi';
+  name = null;
+  name?.isNotEmpty;
+  if(name != null){
+    name.isNotEmpty;
+    // name?.isNotEmpty와 같다.
   }
 }
