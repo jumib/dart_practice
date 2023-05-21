@@ -1,10 +1,16 @@
 class Player {
   final String name;
-  int age = 17;
+  int age, xp;
+  String team;
 
-  // 생성자 이름은 class 이름과 같아야 함
-  // 타입은 이미 위에서 지정해서 중복작성 안해도 됨
-  Player({required this.name, required this.age});
+// 콜론을 넣음으로써 dart에게 여기서 객체를 초기화하라고 명령
+  Player.createBluePlayer({
+    required String name,
+    required int age,
+  }) : this.age = age,
+  this.name = name,
+  this.team = 'blue',
+  this.xp = 0;
 
   void sayHello(){
   // class method안에서는 this를 쓰지 않는 것을 권장한다.
@@ -13,8 +19,11 @@ class Player {
 }
 
 void main(){
-  // new를 꼭 붙이지 않아도 된다.
-  // named parameter 사용할 수 있음
-  var player = Player(name: 'jumi', age: 11);
+  var player = Player.createBluePlayer(name: 'jumi', age: 11);
   player.sayHello();
+  print(player.name);
+  print(player.age);
+  print(player.team);
+  print(player.xp);
+
 }
