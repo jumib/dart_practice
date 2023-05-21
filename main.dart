@@ -1,11 +1,18 @@
-void main() {
-  // Set의 요소 내 아이템은 모두 유니크함 
 
-  Set<int> numbers = {1,2,3,4};
-  numbers.add(1);
-  numbers.add(1);
-  numbers.add(1);
+// void : 함수가 아무것도 리턴하지 않음
+// void sayHello (String name) {
+//   print("hi $name, nice to meet you!");
+// }
+
+String sayHello (String name) {
+  return "hi $name, nice to meet you!";
+}
+
+// fat arrow function
+num plus(num a, num b) => a + b;
+
+void main() {
   
-  print(numbers); //{1,2,3,4}
+  print(sayHello('jumi'));
 
 }
