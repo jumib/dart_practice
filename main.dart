@@ -1,13 +1,14 @@
-// 자료형에 사용자가 원하는 alias를 붙일 수 있게 해줌
-
-typedef ListOfInts = List<int>;
-
-ListOfInts reverseListOfNumbers(ListOfInts list) {
-  var reversedList = list.reversed.toList();
-  return reversedList;
+class Player {
+  final String name = 'jumi';
+  int age = 17;
+  void sayHello(){
+  // class method안에서는 this를 쓰지 않는 것을 권장한다.
+  print("Hi my name is $name");
+  }
 }
 
-void main() {
-  print(reverseListOfNumbers([1,2,3]));
-
+void main(){
+  // new를 꼭 붙이지 않아도 된다.
+  var player = Player();
+  player.sayHello();
 }
