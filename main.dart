@@ -1,10 +1,13 @@
-// named parameter 안쓰고 필수값 아닐 경우
-String sayHello (String name, int age, [String? country = 'korea'] ) {
-  return "hi $name, you are $age, from $country";
-}
+// left ?? right
+// left가 null 이면 right 반환
+// null  아니면 left 반환
+
 
 void main() {
-  // 순서에 상관 있음 => Positional parameter
-  print(sayHello('jumi', 11));
+  String? name;
+  name ?? 'jumi';
+  name = null;
+  name ?? 'another';
+  print(name);
 
 }
