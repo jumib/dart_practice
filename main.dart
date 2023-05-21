@@ -1,19 +1,11 @@
 void main() {
-  // object = any
-  // object는 기본적으로 어떤 자료형이든 될 수 있다
-  // key와 value를 가지는 구조로 obj를 만들 때, 그것이 특정 형태를 가질 때 (: get api data 같은)
-  // Map 보다 Dart의 class를 사용하는 것이 낫다
+  // Set의 요소 내 아이템은 모두 유니크함 
 
-  List<Map<String, Object>> players = [
-    {
-      'name': 'jumi',
-      'xp': 1999.99,
-      'superPower': false
-    },
-    {
-      'name': 'jumi',
-      'xp': 1999.99,
-      'superPower': false
-    }
-  ];
+  Set<int> numbers = {1,2,3,4};
+  numbers.add(1);
+  numbers.add(1);
+  numbers.add(1);
+  
+  print(numbers); //{1,2,3,4}
+
 }
