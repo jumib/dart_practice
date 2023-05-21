@@ -1,18 +1,12 @@
-
-// void : 함수가 아무것도 리턴하지 않음
-// void sayHello (String name) {
-//   print("hi $name, nice to meet you!");
-// }
-
-String sayHello (String name) {
-  return "hi $name, nice to meet you!";
+// 중괄호 추가
+// default value 추가
+// 또는 required 추가 (반드시 파라미터 넘겨받아야 하는 경우)
+String sayHello ({required String name, required int age, required String contry }) {
+  return "hi $name, you are $age, from $contry";
 }
 
-// fat arrow function
-num plus(num a, num b) => a + b;
-
 void main() {
-  
-  print(sayHello('jumi'));
+  // 순서에 상관 없이 parameter name만 적어주면 됨
+  print(sayHello(name: 'jumi', contry: 'korea', age: 11));
 
 }
